@@ -2,8 +2,9 @@
 # encoding: utf-8
 
 require 'scraperwiki'
-require 'open-uri'
+# require 'open-uri'
 require 'pdf-reader'
+require 'scraped_page_archive/open-uri'
 
 # require 'colorize'
 # require 'pry'
