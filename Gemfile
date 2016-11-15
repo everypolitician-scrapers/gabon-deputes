@@ -12,3 +12,4 @@ gem "colorize"
 gem "nokogiri"
 gem "open-uri-cached"
 gem 'pdf-reader'
+gem 'scraped_page_archive'
