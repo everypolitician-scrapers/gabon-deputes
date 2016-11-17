@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Tue, 15 Nov 2016 14:42:14 GMT
+    - Thu, 17 Nov 2016 09:39:20 GMT
     Server:
     - Apache/2.2.16
     Content-Length:
@@ -30,9 +30,9 @@ response:
     Last-Modified:
     - '1451602800'
     Cache-Control:
-    - public, max-age=Wed, 16 Nov 2016 03
+    - public, max-age=Fri, 18 Nov 2016 10
     Expires:
-    - Wed, 16 Nov 2016 03
+    - Fri, 18 Nov 2016 10
     X-Copy:
     - Oshimin Labs 2011
     X-Dev3-Cms-Engine:
@@ -48,11 +48,11 @@ response:
     Pragma:
     - no-cache
     Set-Cookie:
-    - lang=fr; expires=Wed, 15-Nov-2017 14:42:14 GMT; path=/
-    - likia=7nrj0sihdfumq458kkvodnlrq6; path=/
+    - lang=fr; expires=Fri, 17-Nov-2017 09:39:20 GMT; path=/
+    - likia=6k428sl62f0lq24t9o4bmsa0h7; path=/
     Content-Type:
     - application/pdf
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Tue, 15 Nov 2016 14:42:30 GMT
+recorded_at: Thu, 17 Nov 2016 09:39:40 GMT
