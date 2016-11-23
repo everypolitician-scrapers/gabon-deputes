@@ -1,0 +1,495 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+	
+        
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+						Bureaux des Commissions
+		</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="/css/styles_assemblee.css" />
+<link rel="icon" type="images/x-icon" href="/img/favicon_ministre.png" />
+<link rel="stylesheet" type="text/css" href="/css/styles_gol.css">
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	var tickFn =  function(){
+		$.ajax({
+		    type: "GET",
+		    url: "http://analytics.demo.nic.ga/index.php",
+		    dataType: 'jsonp',
+		    crossDomain: true,
+		    data: {
+		        module: "API",
+		        method: "Live.getCounters",
+		        idSite: "48",
+		        lastMinutes: "60",
+		        format: "JSON",
+		        token_auth: "0043430369a0f2bf5d837a6a32f2f561"
+		    }
+		}).done(function( data ) {
+
+		    //alert(' - visits:'+data[0].visits + ' - actions:'+data[0].actions + ' - visitsConverted:'+data[0].visitsConverted);
+		    $( "#couteurVisite" ).empty().append( data[0].visits);
+			$( "#couteurVisite-pluriel" ).empty().append(data[0].visits >1 ?"Visiteurs" : "Visiteur" ); 
+
+		}).fail(function() { $( "#couteurVisite" ).empty().append( 'Erreur' ); });
+	};
+	setInterval(tickFn,30000);
+	tickFn();
+
+});
+</script> 
+</head>
+				
+<body>
+	<div class="topPanelDiv">
+    <ul id="topPanel">
+        <li id="instututions">
+            <a class="head" href="#"><span><strong>I</strong>nstitutions</span></a>
+            <ul>
+
+                <li>&diams;<a target="_blank" title="Senat" href="http://www.senat.ga">Le S&eacute;nat</a></li>
+                <li>&diams;<a target="_blank" title="Assemblee Nationale Gabonaise" href="http://www.assemblee-nationale.ga">L’Assembl&eacute;e Nationale</a></li>
+                <li>&diams;<a target="_blank" title="Conseil Economique et Social" href="http://www.cesgabon.ga">Le C.E.S</a></li>
+                            </ul>
+        </li>
+        <li id="ministeres">
+            <a class="head" href="#"><span><strong>M</strong>inist&egrave;res</span></a>
+            <ul>
+                <li><a target="_blank" title="Portail Officiel du Gouvernement Gabonais" href="http://www.gouvernement.ga/">Portail Officiel du Gouvernement Gabonais</a></li>
+                
+                <li>&diams;<a target="_blank" title="Primature" href="http://www.primature.gouv.ga/">Primature</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l'Urbanisme, de l'Habitat social et du Logement" href="#">Logement</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Affaires Etrang&egrave;res, de la Francophonie et de l’Int&eacute;gration R&eacute;gionale, charg&eacute; des Gabonais de l'Etranger" href="http://www.diplomatie.gouv.ga/">Affaires Etrang&egrave;res</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Enseignement Sup&eacute;rieur, de la Recherche Scientifique et de la Formation des Cadres" href="http://www.enseignement-superieur.gouv.ga/">Enseignement Sup&eacute;rieur</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l'Eau et de l’Energie" href="http://www.energie.gouv.ga/">Eau et Energie</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du D&eacute;veloppement social et familial, de la Pr&eacute;voyance Sociale et de la Solidarit&eacute; Nationale" href="#">Pr&eacute;voyance Sociale</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Infrastructures, des Travaux publics et de l’Am&eacute;nagement du territoire" href="http://www.infrastructures.gouv.ga/">Infrastructures</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Economie Num&eacute;rique, de la Communication, de la Culture et des Arts, Porte-parole du Gouvernement" href="http://www.economie-numerique.gouv.ga">Economie numerique</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Relations avec les Institutions Constitutionnelles, chargé du Dialogue Politique" href="http://www.relations-institutions.gouv.ga/">Relations avec les Institutions</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Economie, de la Prospective et de la Programmation du Développement" href="http://www.economie.gouv.ga/">Economie</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re, Secr&eacute;taire G&eacute;n&eacute;ral de la Pr&eacute;sidence de la R&eacute;publique, charg&eacute; de la D&eacute;fense nationale" href="http://www.defense-nationale.gouv.ga/">D&eacute;fense Nationale</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l'Economie foresti&egrave;re, de la P&ecirc;che et de l'Environnement, charg&eacute; de la Protection et de la Gestion des Ecosyst&egrave;mes" href="http://www.eaux-forets.gouv.ga/">For&ecirc;ts et Environnement</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la Justice, Garde des Sceaux, charg&eacute; des Droits Humains" href="http://www.justice.gouv.ga/">Justice</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du Travail, de l’Emploi, de la Formation Technique et Professionnelle, et de l'Insertion des jeunes" href="http://www.travail.gouv.ga/">Travail</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la Sant&eacute; Publique et de la Population" href="http://www.sante.gouv.ga/">Sant&eacute;</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du P&eacute;trole et des Hydrocarbures" href="http://www.petrole.gouv.ga/">P&eacute;trole</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Egalit&eacute; des chances" href="http://www.egalite-chances.gouv.ga/">Egalit&eacute; des chances</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de le Promotion des Investissements Privés, du Commerce, du Tourisme et de l'Industrie" href="http://www.commerce.gouv.ga/">Commerce</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Transports et de la Logistique" href="http://www.transports.gouv.ga/">Transports</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Mines" href="http://www.mines.gouv.ga/">Mines</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Agriculture, de l'Elevage, charg&eacute; de la Mise en Oeuvre du Programme GRAINE" href="http://www.agriculture.gouv.ga/">Agriculture</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du Budget et des Comptes Publics" href="http://www.budget.gouv.ga/">Budget</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la Promotion des Petites et Moyennes Entreprises, charg&eacute; de l'Entreprenariat National" href="http://www.pme.gouv.ga/">Promotion des Pme</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la R&eacute;forme de l'Etat" href="#">Réforme</a></li>
+                                
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Education Nationale et de l’Education Civique" href="http://www.education-nationale.gouv.ga/">Education Nationale</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la Jeunesse et des Sports" href="http://www.jeunesse-sports.gouv.ga/">Jeunesse et Sports</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re la Fonction Publique" href="http://fonction-publique.gouv.ga/">Fonction Publique</a></li>
+                
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Int&eacute;rieur, de la S&eacute;curit&eacute; Publique et de l'Hygi&egrave;ne Publique, chargé de la D&eacute;centralisation, du D&eacute;veloppement Local" href="http://www.interieur.gouv.ga/">Int&eacute;rieur</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du D&eacute;veloppement Social et Familial, de la Pr&eacute;voyance Sociale et de Solidarit&eacute; Nationale" href="http://www.prevoyance-sociale.gouv.ga/">Pr&eacute;voyance-sociale</a></li>
+                
+                             
+                
+		
+            </ul>
+        </li>
+        <li id="ambassades">
+            <a class="head" href="#"><span><strong>A</strong>mbassades</span></a>
+            <ul>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en Afrique du Sud" href="http://www.amba-afriquedusud.ga">Afrique du Sud</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en France" href="http://www.amba-france.ga">France</a></li>
+                <li>&diams;<a target="_blank" title="Consulat du Gabon en France" href="http://www.consulat-france.ga">Consulat en France</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en Allemagne" href="http://www.amba-allemagne.ga">Allemagne</a></li>
+                                <li>&diams;<a target="_blank" title="Mission Permanente du Gabon aupr&egrave;s de l&rsquo;ONU &agrave; Gen&egrave;ve, &agrave; Vienne et des autres organisations Internationales ayant leur si&egrave;ge en Suisse" href="http://www.mission-geneve.ga">Mission Permanente du Gabon &agrave; Gen&egrave;ve</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon au S&eacute;n&eacute;gal" href="http://www.amba-senegal.ga">S&eacute;n&eacute;gal</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en Cor&eacute;e" href="http://www.amba-coree.ga">Cor&eacute;e</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en Chine" href="http://www.amba-chine.ga">Chine</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon au Maroc" href="http://www.amba-maroc.ga">Maroc</a></li>
+            </ul>
+        </li>
+        <li id="mairies">
+            <a class="head" href="#"><span><strong>M</strong>airies</span></a>
+            <ul>
+                <li>&diams;<a target="_blank" title="Mairie de Libreville" href="http://www.libreville.ga/" >Libreville</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Franceville" href="http://www.franceville.ga/" >Franceville</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Lambar&eacute;n&eacute;" href="http://www.lambarene.ga/" >Lambar&eacute;n&eacute;</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Mouila" href="http://www.mouila.ga/" >Mouila</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Tchibanga" href="http://www.tchibanga.ga/" >Tchibanga</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Makokou" href="http://www.makokou.ga/" >Makokou</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Koulamoutou" href="http://www.koulamoutou.ga/" >Koulamoutou</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Port-gentil" href="http://www.port-gentil.ga/" >Port-gentil</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Oyem" href="http://www.oyem.ga/" >Oyem</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Owendo" href="http://www.owendo.ga/" >Owendo</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="site">
+
+	<div class="ban">&nbsp;</div>
+	<div class="menu">
+					    <ul class="ulMenu">
+                                                        <li>    <a href="/"   ><span>Accueil</span></a>
+
+</li>
+                                                <li>
+                        <a href="/"   ><span>Connaitre l&#039;Assemblée</span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/30-historique/32-l-histoire-de-l-assemblee-nationale-du-gabon/"   ><span>Historique</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/76-la-constitution-/"   ><span>Constitution</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/144-reglement-interieur-de-l-assemblee/"   ><span>Réglement de l&#039;Assemblée Nationale</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/64-le-role-du-depute-a-l-assemblee-nationale/"   ><span>Rôle des députés</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/163-les-differentes-commissions/"   ><span>Les différentes commissions</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/86-l-administration-de-l-assemblee-nationale/"   ><span>L&#039;administration</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                <li>
+                        <a href="/"   ><span>Travaux du Parlement </span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/182-page-en-construction/"   ><span>Auditions</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/39-differents-travaux-du-parlement/124-commission/"   ><span>Commissions </span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Lois</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                <li>
+                        <a href="/"   ><span>Députés</span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/34-deputes/35-le-president-de-l-assemblee-nationale/"   ><span>Président</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/152-le-bureau/"   ><span>Bureau</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/168-bureaux-des-commissions/"   ><span>Commissions</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/68-presentation-du-parlement-gabonais-des-jeunes/"   ><span>Parlement Gabonais des Jeunes </span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/153-les-femmes-deputes/"   ><span>Réseau des femmes parlementaires</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/191-liste-des-deputes-de-la-12eme-legislature-/"   ><span>Liste des députés</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Conférence des Présidents</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                <li>
+                        <a href="/"   ><span>Informations Pratiques</span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/59-informations-pratiques/181-recrutement/"   ><span>Recrutement</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/59-informations-pratiques/173-diplomatie-parlementaire/"   ><span>Diplomatie Parlementaire</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Organismes locaux</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Groupe parlementaire</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/59-informations-pratiques/161-groupe-d-amitie/"   ><span>Groupe D&#039;amitié</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/59-informations-pratiques/176-lexique-vocabulaire-parlementaire/"   ><span>Lexique</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                <li>
+                        <a href="/"   ><span>Actualités</span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/1-actualites-/98-evenements/"   ><span>Evènements</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Audition</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/1-actualites-/100-audiences/"   ><span>Audience</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Séance plénière</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                    <li>    <a href="/154-contacts/155-contacts/"   ><span>Contacts</span></a>
+
+</li>
+                            <br clear="all" />
+    </ul>
+  
+			</div>
+	<div class="corps">
+
+		<div class="bloc_left">
+			<div class="form_search">
+				<form action="/recherche" method='post'>
+                    <table>
+                    	<tr>
+                    		<td><input id='name' name='smallSearch' type='text' value="" placeholder="Entrer votre recherche"></td>
+                    		<td><button >ok</button></td>
+                    	</tr>
+                    </table>
+                </form>
+			</div>
+		
+			<div class="items_left">
+				<div class="title_items">M&eacute;diath&egrave;que</div>
+				<div class="contents_items">
+											    <ul id="navigation">
+                                                        <li>    <a href="/182-page-en-construction/"  >Photothèque</a>
+</li>
+                                                    <li>    <a href="/182-page-en-construction/"  >Vidéothèque</a>
+</li>
+                        </ul>
+ 
+									</div>
+			</div>
+			<div class="items_left">
+				<div class="title_items">Activit&eacute;s de contr&ocirc;le</div>
+				<div class="contents_items">
+											    <ul id="navigation">
+                                                        <li>    <a href="/182-page-en-construction/"  >Interpellations</a>
+</li>
+                                                    <li>    <a href="/182-page-en-construction/"  >Questions au Gouvernement</a>
+</li>
+                                                    <li>    <a href="/182-page-en-construction/"  >Motion de Censure</a>
+</li>
+                        </ul>
+ 
+									</div>
+			</div>
+		</div>
+
+		<div class="bloc_center">
+    <ul class="breadcrumb">
+        <li><a href="/">Accueil</a></li>
+                    <li> / <a href="/34-deputes/">Députés</a></li>
+                    <li> / <a href="/34-deputes/168-bureaux-des-commissions/">Bureaux des Commissions</a></li>
+            </ul>
+
+			<p>
+			<span class="title_article">Bureaux des Commissions</span>
+			<p>
+								<p><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">COMMISSIONS DES LOIS, DES AFFAIRES ADMINISTRATIVES ET DES DROITS DE L'HOMME:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p><strong>Bureau :</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Président : <strong>INDOUMOU MAMBOUNGOU Barnabé</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1er Vice-Président :<strong> MVE EBANG Marcelin</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2e Vice-Président : <strong>BAYOGA NEMBE Célestin</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rapporteur 1 : <strong>MBOUMBOU MIYAKOU Edgard Anicet</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rapporteur 2 : <strong>OGOULA Philomène</strong> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rapporteur 3 : <strong>BAL’ABONDHOUME ép.KOUNDE Irène Farelle</strong><br></p><p><br><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">COMMISSIONS DES AFFAIRES ETRANGERES, DE LA COOPERATION INTERNATIONALE ET DE LA DEFENSE NATIONALE:</span></p><p><strong>Bureau :</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Président : <strong>NZENGUE MAYILA Philippe</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Vice-Président : <strong>MENGA M'ESSONE Michel</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Rapporteur 1 : <strong>ANGANGOU Estelle Flore</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Rapporteur 2 : <strong>OWONO NDONG Edgard</strong><br></p><p><br><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">COMMISSIONS DE LA PLANIFICATION ET DE L'AMENAGEMENT DU TERRITOIRE:</span></p><p><strong>Bureau</strong> :<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Président : <strong>NYINGONE ANDA Marie-Madzleine</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Vice-Président : <strong>MABALA Martin</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Rapporteur 1 : <strong>MIKANGA SEMBA Philippe Romain</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Rapporteur 2 : <strong>MOUSSAVOU Louis Marie</strong><br></p><p><br><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">COMMISSIONS DES FINANCES, DU BUDGET ET DE LA COMPTABILITE PUBLIQUE:</span></p><p style="" data-mce-style=""><strong>Bureau :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Président : <strong>EYAMBA TSIMAT Maurice Nestor</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vice-Président : <strong>ANGWE ABOUGHE André</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rapporteur 1 :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rapporteur 2 : <strong>NGOMBELA Raymond</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rapporteur 3 : <strong>MONDJO Dieudonné</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rapporteur 4 : <strong>OTANDO Charles</strong></p><p><br><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">COMMISSIONS DES AFFAIRES ECONOMIQUES, DE LA PRODUCTION ET DU DEVELOPPEMENT:</span><br></p><p><strong>Bureau :</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Président : <strong>BERRE André Dieudonné</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Vice-Président : <strong>NTOLO EYA'A Francis</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Rapporteur 1 : <strong>NONGOU MOUNDOUNGA Ep. LOUEMBET Pauline Olive</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Rapporteur 2 : <strong>NZIENGUI MIHINDOU</strong><br></p><p><br><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">COMMISSIONS DES AFFAIRES SOCIALES, DES AFFAIRES CULTURELLES ET DE LA COMMUNICATION:</span><br></p><p><strong>Bureau :</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Président : <strong>MAGANGA MOUSSAVOU Albertine</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Vice-Président : <strong>IVALA Christian Clotaire</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Rapporteur 1 :<strong> AKOGHET Gisèle</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Rapporteur 2 : <strong>MALONGA MOUELET Gabriel</strong><br></p><p><br><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">COMMISSIONS DE L'ENVIRONNEMENT ET DU DEVELOPPEMENT DURABLE:</span><br></p><p><strong>Bureau :</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Président : <strong>NGOMA Angélique</strong><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Vice-Président :<strong> MASSIMA Jean</strong><br><strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</strong>Rapporteur 1 :<strong> NZEMOUNIDIEMBOU Joséphine</strong><br><strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </strong>&nbsp;Rapporteur 2 : <strong>MOUDOUMA Appolinaire Adonis</strong><br></p>			</p>
+		</p>
+		<p class="titleArticle date_article" />
+	        	            Modifi&eacute; : 10 / 02 / 2014
+	                </p>
+	</div>
+
+		<div class="bloc_right">
+			<div class="vignette_pr">
+
+					                <a href="/61-biographie-du-president-de-l-assemblee-nationale/" ><img src="/object.getObject.do?id=266&object=pictMinistre&mime=pictMinistre-mime" width="170px" alt="Richard Auguste ONOUVIET || Président de l’Assemblée Nationale" title="Richard Auguste ONOUVIET || Président de l’Assemblée Nationale"/></a>
+	                <h1>Richard Auguste ONOUVIET</h1>
+	                <h2>Président de l’Assemblée Nationale</h2>
+	            
+							</div>
+			<div class="items"><a href="/184-editorial/185-editorial/">Editorial</a></div>
+			<div class="items_right">
+				<div class="title_items_right">Publications</div>
+								<div class="content_items_right">
+					<ul>
+												<li><a href="/4-publications/219-audition-du-ministre-de-la-sante-et-de-la-prevoyance-sociale/">Audition du Ministre de la Santé et de la  Prévoyance Sociale</a>
+												<li><a href="/4-publications/160-repertoire-des-lois-votees-en-2013/">Repertoire des Lois votées en 2013</a>
+												<li><a href="/4-publications/19-bilan-des-travaux-legislatifs/">Bilan des travaux législatifs</a>
+												<li><a href="/4-publications/18-le-travail-collaboratif-dans-les-assemblees-parlementaires/">Le Travail collaboratif dans les assemblées parlementaires</a>
+												<li><a href="/4-publications/17-lois-de-finances-2011/">Lois de finances 2011</a>
+											</ul>
+					<div class="more_items">
+						<a href="/4-publications/" >---- Toutes les publications ----</a>
+					</div>
+				</div>
+			</div>
+			<div class="items_right">
+				<div class="title_items_right">Textes de r&eacute;f&eacute;rence</div>
+				<div class="content_items_right">
+										<ul>
+												<li><a href="/5-textes-de-reference/22-reglement-du-parlement/">Règlement du parlement</a>
+												<li><a href="/5-textes-de-reference/21-la-constitution/">La Constitution</a>
+											</ul>
+					<div class="more_items">
+						<a href="/5-textes-de-reference/" >----&nbsp;&nbsp;&nbsp;Tous les textes&nbsp;&nbsp;&nbsp;----</a>
+					</div>
+				</div>
+			</div>
+			<div class="items_right">
+                <h3 class="title_items_right"><img src="/img/connect.png" alt="Connexion" style="float:left" /><span><b id="couteurVisite"></b> <b id="couteurVisite-pluriel"  class="">Visiteur</b></span><img src="/img/connect.png" alt="Connexion" style="float:right" /></h3>
+            </div>
+            <div class="items_right none">
+                <div class="lastMod">Derni&egrave;re mise &agrave; jour :
+                                        15/06/2016
+                                                            </div>
+            </div>
+		</div>
+
+		<br clear="all" />
+
+		<div class="footer">
+			<table cellpadding="3" cellspacing="0" border="0" width="100%" height="28px">
+				<tr>
+					<td align="left">
+													    <ul class="">
+                                                                            <li>    <a href="http:///" target="_blank"  ><span>Accueil</span></a>
+
+</li>
+                                                    <li>    <a href="http:///" target="_blank"  ><span>Mentions légales</span></a>
+
+</li>
+                                                    <li>    <a href="http:///" target="_blank"  ><span>Plan du site</span></a>
+
+</li>
+                                                    <li>    <a href="http:///" target="_blank"  ><span>Contacts</span></a>
+
+</li>
+                            <br clear="all" />
+    </ul>
+  
+											</td>
+					<td align="right" valign="middle">Copyright &copy; . www.assemblee-nationale.ga</td>
+			</table>
+		</div>
+	</div>
+</div>
+			  
+		<script type="text/javascript">
+			var pkBaseURL = "/js/" ;
+			document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			try {
+			var piwikTracker = Piwik.getTracker("http://analytics.demo.nic.ga/piwik.php", 48);
+			piwikTracker.trackPageView();
+			piwikTracker.enableLinkTracking();
+			} catch( err ) {}
+		</script>
+		<noscript><p><img src="http://analytics.demo.nic.ga/piwik.php?idsite=48" style="border:0" alt="" /></p></noscript>
+		</body>
+	
+</html>
