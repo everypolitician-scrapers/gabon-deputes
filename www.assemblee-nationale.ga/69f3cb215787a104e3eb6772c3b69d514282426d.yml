@@ -1,0 +1,54 @@
+---
+request:
+  method: get
+  uri: http://www.assemblee-nationale.ga/34-deputes/153-les-femmes-deputes/
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - '*/*'
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Date:
+    - Wed, 23 Nov 2016 09:43:47 GMT
+    Server:
+    - Apache/2.2.16
+    Pragma:
+    - no-cache
+    Cache-Control:
+    - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    Expires:
+    - Thu, 19 Nov 1981 08
+    X-Copy:
+    - Oshimin Labs 2011
+    X-Dev3-Cms-Engine:
+    - Joel Konan ASSOUA
+    X-Dev2-Cms-Engine:
+    - Jimmy Cedric NDOUMBA
+    X-Author-Cms-Engine:
+    - Ulrich Arthur BADINGA BADINGA
+    X-Product:
+    - Oshimin Labs/CMS 0.0.1
+    X-Powered-By:
+    - Oshimin Labs
+    Set-Cookie:
+    - lang=fr; expires=Thu, 23-Nov-2017 09:43:47 GMT; path=/
+    - likia=em45b38i6ru05loist4btpg4c4; path=/
+    Vary:
+    - Accept-Encoding
+    Content-Length:
+    - '8805'
+    Content-Type:
+    - text/html; charset=utf-8
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Wed, 23 Nov 2016 09:44:12 GMT

@@ -1,0 +1,1101 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+	
+        
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+						Les Femmes Députés
+		</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="/css/styles_assemblee.css" />
+<link rel="icon" type="images/x-icon" href="/img/favicon_ministre.png" />
+<link rel="stylesheet" type="text/css" href="/css/styles_gol.css">
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	var tickFn =  function(){
+		$.ajax({
+		    type: "GET",
+		    url: "http://analytics.demo.nic.ga/index.php",
+		    dataType: 'jsonp',
+		    crossDomain: true,
+		    data: {
+		        module: "API",
+		        method: "Live.getCounters",
+		        idSite: "48",
+		        lastMinutes: "60",
+		        format: "JSON",
+		        token_auth: "0043430369a0f2bf5d837a6a32f2f561"
+		    }
+		}).done(function( data ) {
+
+		    //alert(' - visits:'+data[0].visits + ' - actions:'+data[0].actions + ' - visitsConverted:'+data[0].visitsConverted);
+		    $( "#couteurVisite" ).empty().append( data[0].visits);
+			$( "#couteurVisite-pluriel" ).empty().append(data[0].visits >1 ?"Visiteurs" : "Visiteur" ); 
+
+		}).fail(function() { $( "#couteurVisite" ).empty().append( 'Erreur' ); });
+	};
+	setInterval(tickFn,30000);
+	tickFn();
+
+});
+</script> 
+</head>
+				
+<body>
+	<div class="topPanelDiv">
+    <ul id="topPanel">
+        <li id="instututions">
+            <a class="head" href="#"><span><strong>I</strong>nstitutions</span></a>
+            <ul>
+
+                <li>&diams;<a target="_blank" title="Senat" href="http://www.senat.ga">Le S&eacute;nat</a></li>
+                <li>&diams;<a target="_blank" title="Assemblee Nationale Gabonaise" href="http://www.assemblee-nationale.ga">L’Assembl&eacute;e Nationale</a></li>
+                <li>&diams;<a target="_blank" title="Conseil Economique et Social" href="http://www.cesgabon.ga">Le C.E.S</a></li>
+                            </ul>
+        </li>
+        <li id="ministeres">
+            <a class="head" href="#"><span><strong>M</strong>inist&egrave;res</span></a>
+            <ul>
+                <li><a target="_blank" title="Portail Officiel du Gouvernement Gabonais" href="http://www.gouvernement.ga/">Portail Officiel du Gouvernement Gabonais</a></li>
+                
+                <li>&diams;<a target="_blank" title="Primature" href="http://www.primature.gouv.ga/">Primature</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l'Urbanisme, de l'Habitat social et du Logement" href="#">Logement</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Affaires Etrang&egrave;res, de la Francophonie et de l’Int&eacute;gration R&eacute;gionale, charg&eacute; des Gabonais de l'Etranger" href="http://www.diplomatie.gouv.ga/">Affaires Etrang&egrave;res</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Enseignement Sup&eacute;rieur, de la Recherche Scientifique et de la Formation des Cadres" href="http://www.enseignement-superieur.gouv.ga/">Enseignement Sup&eacute;rieur</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l'Eau et de l’Energie" href="http://www.energie.gouv.ga/">Eau et Energie</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du D&eacute;veloppement social et familial, de la Pr&eacute;voyance Sociale et de la Solidarit&eacute; Nationale" href="#">Pr&eacute;voyance Sociale</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Infrastructures, des Travaux publics et de l’Am&eacute;nagement du territoire" href="http://www.infrastructures.gouv.ga/">Infrastructures</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Economie Num&eacute;rique, de la Communication, de la Culture et des Arts, Porte-parole du Gouvernement" href="http://www.economie-numerique.gouv.ga">Economie numerique</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Relations avec les Institutions Constitutionnelles, chargé du Dialogue Politique" href="http://www.relations-institutions.gouv.ga/">Relations avec les Institutions</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Economie, de la Prospective et de la Programmation du Développement" href="http://www.economie.gouv.ga/">Economie</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re, Secr&eacute;taire G&eacute;n&eacute;ral de la Pr&eacute;sidence de la R&eacute;publique, charg&eacute; de la D&eacute;fense nationale" href="http://www.defense-nationale.gouv.ga/">D&eacute;fense Nationale</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l'Economie foresti&egrave;re, de la P&ecirc;che et de l'Environnement, charg&eacute; de la Protection et de la Gestion des Ecosyst&egrave;mes" href="http://www.eaux-forets.gouv.ga/">For&ecirc;ts et Environnement</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la Justice, Garde des Sceaux, charg&eacute; des Droits Humains" href="http://www.justice.gouv.ga/">Justice</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du Travail, de l’Emploi, de la Formation Technique et Professionnelle, et de l'Insertion des jeunes" href="http://www.travail.gouv.ga/">Travail</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la Sant&eacute; Publique et de la Population" href="http://www.sante.gouv.ga/">Sant&eacute;</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du P&eacute;trole et des Hydrocarbures" href="http://www.petrole.gouv.ga/">P&eacute;trole</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Egalit&eacute; des chances" href="http://www.egalite-chances.gouv.ga/">Egalit&eacute; des chances</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de le Promotion des Investissements Privés, du Commerce, du Tourisme et de l'Industrie" href="http://www.commerce.gouv.ga/">Commerce</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Transports et de la Logistique" href="http://www.transports.gouv.ga/">Transports</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re des Mines" href="http://www.mines.gouv.ga/">Mines</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Agriculture, de l'Elevage, charg&eacute; de la Mise en Oeuvre du Programme GRAINE" href="http://www.agriculture.gouv.ga/">Agriculture</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du Budget et des Comptes Publics" href="http://www.budget.gouv.ga/">Budget</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la Promotion des Petites et Moyennes Entreprises, charg&eacute; de l'Entreprenariat National" href="http://www.pme.gouv.ga/">Promotion des Pme</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la R&eacute;forme de l'Etat" href="#">Réforme</a></li>
+                                
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Education Nationale et de l’Education Civique" href="http://www.education-nationale.gouv.ga/">Education Nationale</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de la Jeunesse et des Sports" href="http://www.jeunesse-sports.gouv.ga/">Jeunesse et Sports</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re la Fonction Publique" href="http://fonction-publique.gouv.ga/">Fonction Publique</a></li>
+                
+                <li>&diams;<a target="_blank" title="Minist&egrave;re de l’Int&eacute;rieur, de la S&eacute;curit&eacute; Publique et de l'Hygi&egrave;ne Publique, chargé de la D&eacute;centralisation, du D&eacute;veloppement Local" href="http://www.interieur.gouv.ga/">Int&eacute;rieur</a></li>
+
+                <li>&diams;<a target="_blank" title="Minist&egrave;re du D&eacute;veloppement Social et Familial, de la Pr&eacute;voyance Sociale et de Solidarit&eacute; Nationale" href="http://www.prevoyance-sociale.gouv.ga/">Pr&eacute;voyance-sociale</a></li>
+                
+                             
+                
+		
+            </ul>
+        </li>
+        <li id="ambassades">
+            <a class="head" href="#"><span><strong>A</strong>mbassades</span></a>
+            <ul>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en Afrique du Sud" href="http://www.amba-afriquedusud.ga">Afrique du Sud</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en France" href="http://www.amba-france.ga">France</a></li>
+                <li>&diams;<a target="_blank" title="Consulat du Gabon en France" href="http://www.consulat-france.ga">Consulat en France</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en Allemagne" href="http://www.amba-allemagne.ga">Allemagne</a></li>
+                                <li>&diams;<a target="_blank" title="Mission Permanente du Gabon aupr&egrave;s de l&rsquo;ONU &agrave; Gen&egrave;ve, &agrave; Vienne et des autres organisations Internationales ayant leur si&egrave;ge en Suisse" href="http://www.mission-geneve.ga">Mission Permanente du Gabon &agrave; Gen&egrave;ve</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon au S&eacute;n&eacute;gal" href="http://www.amba-senegal.ga">S&eacute;n&eacute;gal</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en Cor&eacute;e" href="http://www.amba-coree.ga">Cor&eacute;e</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon en Chine" href="http://www.amba-chine.ga">Chine</a></li>
+                <li>&diams;<a target="_blank" title="Ambassade du Gabon au Maroc" href="http://www.amba-maroc.ga">Maroc</a></li>
+            </ul>
+        </li>
+        <li id="mairies">
+            <a class="head" href="#"><span><strong>M</strong>airies</span></a>
+            <ul>
+                <li>&diams;<a target="_blank" title="Mairie de Libreville" href="http://www.libreville.ga/" >Libreville</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Franceville" href="http://www.franceville.ga/" >Franceville</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Lambar&eacute;n&eacute;" href="http://www.lambarene.ga/" >Lambar&eacute;n&eacute;</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Mouila" href="http://www.mouila.ga/" >Mouila</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Tchibanga" href="http://www.tchibanga.ga/" >Tchibanga</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Makokou" href="http://www.makokou.ga/" >Makokou</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Koulamoutou" href="http://www.koulamoutou.ga/" >Koulamoutou</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Port-gentil" href="http://www.port-gentil.ga/" >Port-gentil</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Oyem" href="http://www.oyem.ga/" >Oyem</a></li>
+                <li>&diams;<a target="_blank" title="Mairie de Owendo" href="http://www.owendo.ga/" >Owendo</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="site">
+
+	<div class="ban">&nbsp;</div>
+	<div class="menu">
+					    <ul class="ulMenu">
+                                                        <li>    <a href="/"   ><span>Accueil</span></a>
+
+</li>
+                                                <li>
+                        <a href="/"   ><span>Connaitre l&#039;Assemblée</span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/30-historique/32-l-histoire-de-l-assemblee-nationale-du-gabon/"   ><span>Historique</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/76-la-constitution-/"   ><span>Constitution</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/144-reglement-interieur-de-l-assemblee/"   ><span>Réglement de l&#039;Assemblée Nationale</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/64-le-role-du-depute-a-l-assemblee-nationale/"   ><span>Rôle des députés</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/163-les-differentes-commissions/"   ><span>Les différentes commissions</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/36-connaitre-l-assemblee-nationale/86-l-administration-de-l-assemblee-nationale/"   ><span>L&#039;administration</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                <li>
+                        <a href="/"   ><span>Travaux du Parlement </span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/182-page-en-construction/"   ><span>Auditions</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/39-differents-travaux-du-parlement/124-commission/"   ><span>Commissions </span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Lois</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                <li>
+                        <a href="/"   ><span>Députés</span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/34-deputes/35-le-president-de-l-assemblee-nationale/"   ><span>Président</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/152-le-bureau/"   ><span>Bureau</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/168-bureaux-des-commissions/"   ><span>Commissions</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/68-presentation-du-parlement-gabonais-des-jeunes/"   ><span>Parlement Gabonais des Jeunes </span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/153-les-femmes-deputes/"   ><span>Réseau des femmes parlementaires</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/34-deputes/191-liste-des-deputes-de-la-12eme-legislature-/"   ><span>Liste des députés</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Conférence des Présidents</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                <li>
+                        <a href="/"   ><span>Informations Pratiques</span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/59-informations-pratiques/181-recrutement/"   ><span>Recrutement</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/59-informations-pratiques/173-diplomatie-parlementaire/"   ><span>Diplomatie Parlementaire</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Organismes locaux</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Groupe parlementaire</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/59-informations-pratiques/161-groupe-d-amitie/"   ><span>Groupe D&#039;amitié</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/59-informations-pratiques/176-lexique-vocabulaire-parlementaire/"   ><span>Lexique</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                <li>
+                        <a href="/"   ><span>Actualités</span></a>
+
+
+                        <ul class="ssmenu">
+                                            <li>
+                <a href="/1-actualites-/98-evenements/"   ><span>Evènements</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Audition</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/1-actualites-/100-audiences/"   ><span>Audience</span></a>
+
+
+                    </li>
+                    <li>
+                <a href="/182-page-en-construction/"   ><span>Séance plénière</span></a>
+
+
+                    </li>
+            </ul>
+
+                </li>
+                                                    <li>    <a href="/154-contacts/155-contacts/"   ><span>Contacts</span></a>
+
+</li>
+                            <br clear="all" />
+    </ul>
+  
+			</div>
+	<div class="corps">
+
+		<div class="bloc_left">
+			<div class="form_search">
+				<form action="/recherche" method='post'>
+                    <table>
+                    	<tr>
+                    		<td><input id='name' name='smallSearch' type='text' value="" placeholder="Entrer votre recherche"></td>
+                    		<td><button >ok</button></td>
+                    	</tr>
+                    </table>
+                </form>
+			</div>
+		
+			<div class="items_left">
+				<div class="title_items">M&eacute;diath&egrave;que</div>
+				<div class="contents_items">
+											    <ul id="navigation">
+                                                        <li>    <a href="/182-page-en-construction/"  >Photothèque</a>
+</li>
+                                                    <li>    <a href="/182-page-en-construction/"  >Vidéothèque</a>
+</li>
+                        </ul>
+ 
+									</div>
+			</div>
+			<div class="items_left">
+				<div class="title_items">Activit&eacute;s de contr&ocirc;le</div>
+				<div class="contents_items">
+											    <ul id="navigation">
+                                                        <li>    <a href="/182-page-en-construction/"  >Interpellations</a>
+</li>
+                                                    <li>    <a href="/182-page-en-construction/"  >Questions au Gouvernement</a>
+</li>
+                                                    <li>    <a href="/182-page-en-construction/"  >Motion de Censure</a>
+</li>
+                        </ul>
+ 
+									</div>
+			</div>
+		</div>
+
+		<div class="bloc_center">
+    <ul class="breadcrumb">
+        <li><a href="/">Accueil</a></li>
+                    <li> / <a href="/34-deputes/">Députés</a></li>
+                    <li> / <a href="/34-deputes/153-les-femmes-deputes/">Les Femmes Députés</a></li>
+            </ul>
+
+			<p>
+			<span class="title_article">Les Femmes Députés</span>
+			<p>
+								<table style="height: 363px;" class="mce-item-table" width="488"><tbody><tr><td><strong>NOMS ET PRENOMS</strong> </td><td><strong>PARTI POLITIQUE</strong></td></tr><tr><td>AKOGHET Gisèle</td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>ANGANGOU Estelle Flore &nbsp;&nbsp;&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>AZIZET Berthe</td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>BAL’ABONDHOUME Irène Farelle épse KOUNDE </td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>MAGANGA MOUSSAVOU Albertine</td><td style="text-align: center;" class="mce-item-selected">PSD</td></tr><tr><td>MBONZI Solange</td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>MEKAM’NE EDZIDZIE Denise </td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>MOUTSINGA Juliette<br></td><td style="text-align: center;" class="mce-item-selected">PDG/PGCI</td></tr><tr><td>NDEKAYINO Marguerite<br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>NGOMA Angélique &nbsp;&nbsp;&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>NKERO MOUGNOKO Charlotte &nbsp;&nbsp;&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>NONGOU MOUNDOUNGA Pauline Olive épse LOUEMBET &nbsp;&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>NTIMEDJIARA Rachel &nbsp;&nbsp;&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>NYINGONE ANDA Marie-Madeleine &nbsp;&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">RPG</td></tr><tr><td>NZE-MOUENIDIAMBOU Joséphine &nbsp;&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>OGOULA Philomène &nbsp;&nbsp;&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>PAÏENI Paulette épse KOHO&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr><tr><td>ZOUGA AKI Esther &nbsp;&nbsp; <br></td><td style="text-align: center;" class="mce-item-selected">PDG</td></tr></tbody></table><p><br></p><div style="position: absolute; top: 89px; left: 0; width: 1px; height: 1px; overflow: hidden" data-mce-style="position: absolute; top: 89px; left: 0; width: 1px; height: 1px; overflow: hidden" data-mce-bogus="1" contenteditable="false"><div data-mce-bogus="1" contenteditable="true"><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>FR</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]-->
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:2"><b><span style="font-size:18.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-language:FR">Les Femmes Députés</span></b></p>
+
+<table class="MsoNormalTable" style="mso-cellspacing:0cm;mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm" border="1" cellpadding="0" cellspacing="0">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td style="width:315.75pt;background:yellow;padding:
+  0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">NOMS ET
+  PRENOMS </span></b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR"></span></p>
+  </td>
+  <td style="width:124.45pt;background:yellow;padding:
+  0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PARTI POLITIQUE</span></b><span style="font-size:
+  12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR"></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">AKOGHET
+  Gisèle </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">ANGANGOU
+  Estelle Flore </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">AZIZET
+  Berthe </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+  line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">BAL’ABONDHOUME
+  Irène Farelle épse KOUNDE </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">MAGANGA
+  MOUSSAVOU Albertine </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PSD</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+  line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">MBONZI
+  Solange </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:7">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+  line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">MEKAM’NE
+  EDZIDZIE Denise </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:8">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">MOUTSINGA
+  Juliette </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG/PGCI</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:9">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">NDEKAYINO
+  Marguerite </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:10">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">NGOMA
+  Angélique </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:11">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+  line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">NKERO
+  MOUGNOKO Charlotte </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:12">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+  FR" lang="EN-US">NONGOU MOUNDOUNGA Pauline Olive épse LOUEMBET </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:13">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">NTIMEDJIARA
+  Rachel </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:14">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">NYINGONE
+  ANDA Marie-Madeleine </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">RPG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:15">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+  line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">NZE-MOUENIDIAMBOU
+  Joséphine </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:16">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+  line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">OGOULA
+  Philomène </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:17">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">PAÏENI
+  Paulette épse KOHO </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:18;mso-yfti-lastrow:yes">
+  <td style="width:315.75pt;padding:0cm 0cm 0cm 0cm" valign="top" width="421">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:FR">ZOUGA AKI
+  Esther </span></p>
+  </td>
+  <td style="width:124.45pt;padding:0cm 0cm 0cm 0cm" valign="top" width="166">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:FR">PDG</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tableau Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--></div></div>			</p>
+		</p>
+		<p class="titleArticle date_article" />
+	        	            Publi&eacute; le : 06 / 02 / 2014
+	                </p>
+	</div>
+
+		<div class="bloc_right">
+			<div class="vignette_pr">
+
+					                <a href="/61-biographie-du-president-de-l-assemblee-nationale/" ><img src="/object.getObject.do?id=266&object=pictMinistre&mime=pictMinistre-mime" width="170px" alt="Richard Auguste ONOUVIET || Président de l’Assemblée Nationale" title="Richard Auguste ONOUVIET || Président de l’Assemblée Nationale"/></a>
+	                <h1>Richard Auguste ONOUVIET</h1>
+	                <h2>Président de l’Assemblée Nationale</h2>
+	            
+							</div>
+			<div class="items"><a href="/184-editorial/185-editorial/">Editorial</a></div>
+			<div class="items_right">
+				<div class="title_items_right">Publications</div>
+								<div class="content_items_right">
+					<ul>
+												<li><a href="/4-publications/219-audition-du-ministre-de-la-sante-et-de-la-prevoyance-sociale/">Audition du Ministre de la Santé et de la  Prévoyance Sociale</a>
+												<li><a href="/4-publications/160-repertoire-des-lois-votees-en-2013/">Repertoire des Lois votées en 2013</a>
+												<li><a href="/4-publications/19-bilan-des-travaux-legislatifs/">Bilan des travaux législatifs</a>
+												<li><a href="/4-publications/18-le-travail-collaboratif-dans-les-assemblees-parlementaires/">Le Travail collaboratif dans les assemblées parlementaires</a>
+												<li><a href="/4-publications/17-lois-de-finances-2011/">Lois de finances 2011</a>
+											</ul>
+					<div class="more_items">
+						<a href="/4-publications/" >---- Toutes les publications ----</a>
+					</div>
+				</div>
+			</div>
+			<div class="items_right">
+				<div class="title_items_right">Textes de r&eacute;f&eacute;rence</div>
+				<div class="content_items_right">
+										<ul>
+												<li><a href="/5-textes-de-reference/22-reglement-du-parlement/">Règlement du parlement</a>
+												<li><a href="/5-textes-de-reference/21-la-constitution/">La Constitution</a>
+											</ul>
+					<div class="more_items">
+						<a href="/5-textes-de-reference/" >----&nbsp;&nbsp;&nbsp;Tous les textes&nbsp;&nbsp;&nbsp;----</a>
+					</div>
+				</div>
+			</div>
+			<div class="items_right">
+                <h3 class="title_items_right"><img src="/img/connect.png" alt="Connexion" style="float:left" /><span><b id="couteurVisite"></b> <b id="couteurVisite-pluriel"  class="">Visiteur</b></span><img src="/img/connect.png" alt="Connexion" style="float:right" /></h3>
+            </div>
+            <div class="items_right none">
+                <div class="lastMod">Derni&egrave;re mise &agrave; jour :
+                                        15/06/2016
+                                                            </div>
+            </div>
+		</div>
+
+		<br clear="all" />
+
+		<div class="footer">
+			<table cellpadding="3" cellspacing="0" border="0" width="100%" height="28px">
+				<tr>
+					<td align="left">
+													    <ul class="">
+                                                                            <li>    <a href="http:///" target="_blank"  ><span>Accueil</span></a>
+
+</li>
+                                                    <li>    <a href="http:///" target="_blank"  ><span>Mentions légales</span></a>
+
+</li>
+                                                    <li>    <a href="http:///" target="_blank"  ><span>Plan du site</span></a>
+
+</li>
+                                                    <li>    <a href="http:///" target="_blank"  ><span>Contacts</span></a>
+
+</li>
+                            <br clear="all" />
+    </ul>
+  
+											</td>
+					<td align="right" valign="middle">Copyright &copy; . www.assemblee-nationale.ga</td>
+			</table>
+		</div>
+	</div>
+</div>
+			  
+		<script type="text/javascript">
+			var pkBaseURL = "/js/" ;
+			document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			try {
+			var piwikTracker = Piwik.getTracker("http://analytics.demo.nic.ga/piwik.php", 48);
+			piwikTracker.trackPageView();
+			piwikTracker.enableLinkTracking();
+			} catch( err ) {}
+		</script>
+		<noscript><p><img src="http://analytics.demo.nic.ga/piwik.php?idsite=48" style="border:0" alt="" /></p></noscript>
+		</body>
+	
+</html>
