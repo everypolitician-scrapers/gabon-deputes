@@ -2,8 +2,9 @@
 # encoding: utf-8
 
 require 'scraperwiki'
-require 'open-uri'
+# require 'open-uri'
 require 'pdf-reader'
+require 'scraped_page_archive/open-uri'
 
 # require 'colorize'
 # require 'pry'
@@ -42,3 +43,7 @@ term = {
 ScraperWiki.save_sqlite([:id], term, 'terms')
 
 scrape_list('http://www.assemblee-nationale.ga/object.getObject.do?id=190')
+
+# archive some pages for later processing
+open('http://www.assemblee-nationale.ga/34-deputes/168-bureaux-des-commissions/')
+open('http://www.assemblee-nationale.ga/34-deputes/153-les-femmes-deputes/')
