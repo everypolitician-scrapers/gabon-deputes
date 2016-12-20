@@ -35,13 +35,6 @@ def scrape_list(url)
   end
 end
 
-term = {
-  id: 12,
-  name: '12 Législature',
-  start_date: '2012',
-}
-ScraperWiki.save_sqlite([:id], term, 'terms')
-
 scrape_list('http://www.assemblee-nationale.ga/object.getObject.do?id=190')
 
 # archive some pages for later processing
