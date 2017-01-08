@@ -1,5 +1,6 @@
 #!/bin/env ruby
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'pdf-reader'
 require 'pry'
@@ -16,19 +17,18 @@ def scrape_list(url)
   reader = PDF::Reader.new(file)
   reader.pages.each do |page|
     page.text.split("\n").each do |line|
-      if got = line.match(/^\s*(\d+)\s{2,}(.*)\s{2,}(.*)$/)
-        (id, name, party) = got.captures
-        data = { 
-          id: id.strip,
-          name: name.strip,
-          party: party.strip,
-          area: '',
-          term: 12,
-          source: url,
-        }
-        ScraperWiki.save_sqlite([:id, :term], data)
-        puts data
-      end
+      next unless got = line.match(/^\s*(\d+)\s{2,}(.*)\s{2,}(.*)$/)
+      (id, name, party) = got.captures
+      data = {
+        id:     id.strip,
+        name:   name.strip,
+        party:  party.strip,
+        area:   '',
+        term:   12,
+        source: url,
+      }
+      ScraperWiki.save_sqlite(%i(id term), data)
+      puts data
     end
   end
 end
