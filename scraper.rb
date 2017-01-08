@@ -1,15 +1,13 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-require 'scraperwiki'
-# require 'open-uri'
 require 'pdf-reader'
-require 'scraped_page_archive/open-uri'
+require 'pry'
+require 'scraperwiki'
 
-# require 'colorize'
-# require 'pry'
 # require 'open-uri/cached'
 # OpenURI::Cache.cache_path = '.cache'
+require 'scraped_page_archive/open-uri'
 
 def scrape_list(url)
   warn "Getting #{url}"
