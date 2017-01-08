@@ -9,7 +9,7 @@ request:
     Accept-Encoding:
     - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
     Accept:
-    - '*/*'
+    - "*/*"
     User-Agent:
     - Ruby
 response:
@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Wed, 23 Nov 2016 09:43:35 GMT
+    - Sun, 08 Jan 2017 08:52:08 GMT
     Server:
     - Apache/2.2.16
     Content-Length:
@@ -28,11 +28,11 @@ response:
       YXR0YWNoZW1lbnQ7IGZpbGVuYW1lPSJMaXN0ZSBkZXMgRGVwdXRlcyBkZSBs
       YSAxMmUgTMOpZ2lzbGF0dXJlLnBkZiI=
     Last-Modified:
-    - '1451602800'
+    - '1483225200'
     Cache-Control:
-    - public, max-age=Thu, 24 Nov 2016 10
+    - public, max-age=Mon, 09 Jan 2017 09
     Expires:
-    - Thu, 24 Nov 2016 10
+    - Mon, 09 Jan 2017 09
     X-Copy:
     - Oshimin Labs 2011
     X-Dev3-Cms-Engine:
@@ -48,11 +48,11 @@ response:
     Pragma:
     - no-cache
     Set-Cookie:
-    - lang=fr; expires=Thu, 23-Nov-2017 09:43:35 GMT; path=/
-    - likia=ou57di2ijme2778sjd4p6d5s90; path=/
+    - lang=fr; expires=Mon, 08-Jan-2018 08:52:09 GMT; path=/
+    - likia=uaarr7pvjboaicvkecial1vmt5; path=/
     Content-Type:
     - application/pdf
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 23 Nov 2016 09:44:02 GMT
+recorded_at: Sun, 08 Jan 2017 08:53:25 GMT
