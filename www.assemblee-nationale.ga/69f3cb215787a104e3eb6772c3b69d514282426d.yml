@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Wed, 23 Nov 2016 09:43:47 GMT
+    - Sun, 08 Jan 2017 08:52:22 GMT
     Server:
     - Apache/2.2.16
     Pragma:
@@ -40,8 +40,8 @@ response:
     X-Powered-By:
     - Oshimin Labs
     Set-Cookie:
-    - lang=fr; expires=Thu, 23-Nov-2017 09:43:47 GMT; path=/
-    - likia=em45b38i6ru05loist4btpg4c4; path=/
+    - lang=fr; expires=Mon, 08-Jan-2018 08:52:22 GMT; path=/
+    - likia=rbnti0l8vbc07prg2old78tig6; path=/
     Vary:
     - Accept-Encoding
     Content-Length:
@@ -51,4 +51,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 23 Nov 2016 09:44:12 GMT
+recorded_at: Sun, 08 Jan 2017 08:53:38 GMT
